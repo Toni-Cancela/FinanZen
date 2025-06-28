@@ -72,9 +72,15 @@ dev_dependencies:
   # Testing
   mocktail: ^1.0.4
   bloc_test: ^9.1.7
+  integration_test:
+    sdk: flutter
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
+
+# Testing scripts configuration
+# Run with: flutter test --coverage
+# Generate coverage report: genhtml coverage/lcov.info -o coverage/html
 
 # The following section is specific to Flutter packages.
 flutter:
