@@ -1,0 +1,16 @@
+# Coverage configuration for FinanZen
+
+# Test coverage goals
+# - Unit tests: 90%+
+# - Widget tests: 80%+
+# - Integration tests: Key user flows
+
+# Excluded files from coverage
+# Generated files and platform-specific code
+exclude:
+  - "**/*.g.dart"
+  - "**/*.freezed.dart"
+  - "**/*.config.dart"
+  - "**/main.dart"
+  - "lib/injection.config.dart"
+  - "lib/**/*.part.dart"
