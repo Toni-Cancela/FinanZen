@@ -25,10 +25,13 @@ migrate_working_dir/
 
 # Flutter/Dart/Pub related
 **/doc/api/
-**/ios/Flutter/.last_build_id
+**/ios/Flutter/flutter_framework.xcframework/flutter_framework
+**/ios/Flutter/flutter_framework.xcframework/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.fvm/flutter_sdk
+.packages
 .pub-cache/
 .pub/
 /build/
@@ -44,6 +47,13 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Environment variables
+# Environment variables and secrets
 .env
+.env.local
+.env.production
+.env.staging
+
+# Scripts
 scripts/.env
+scripts/__pycache__/
+scripts/*.pyc
