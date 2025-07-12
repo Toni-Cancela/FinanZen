@@ -1,17 +1,27 @@
+import 'package:dartz/dartz.dart';
+
 // Error handling
 abstract class Failure {
-  final String message;
-  const Failure(this.message);
+  const Failure();
 }
 
 class ServerFailure extends Failure {
-  const ServerFailure(super.message);
-}
-
-class NetworkFailure extends Failure {
-  const NetworkFailure(super.message);
+  final String message;
+  
+  const ServerFailure(this.message);
 }
 
 class CacheFailure extends Failure {
-  const CacheFailure(super.message);
+  final String message;
+  
+  const CacheFailure(this.message);
 }
+
+class NetworkFailure extends Failure {
+  final String message;
+  
+  const NetworkFailure(this.message);
+}
+
+// Type aliases for cleaner code
+typedef FailureOr<T> = Either<Failure, T>;
